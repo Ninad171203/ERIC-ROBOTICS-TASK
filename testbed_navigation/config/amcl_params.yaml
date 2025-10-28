@@ -1,7 +1,7 @@
 amcl:
   ros__parameters:
     use_sim_time: True
-    base_frame_id: "base_footprint"
+    base_frame_id: "base_link"
     global_frame_id: "map"
     odom_frame_id: "odom"
     scan_topic: "/scan"
@@ -21,7 +21,6 @@ amcl:
     alpha2: 0.2
     alpha3: 0.2
     alpha4: 0.2
-
     laser_model_type: "likelihood_field"
     beam_skip_distance: 0.5
     beam_skip_error_threshold: 0.9
@@ -32,8 +31,8 @@ amcl:
     laser_max_range: 100.0
     laser_min_range: 0.1
     max_beams: 60
-    pf_error: 0.05
-    pf_z : 0.99
+    pf_err: 0.05
+    pf_z: 0.99
     sigma_hit: 0.2
     z_hit: 0.5
     z_max: 0.05
@@ -43,7 +42,7 @@ amcl:
     resample_interval: 1
     min_particles: 500
     max_particles: 2000
-    recoverery_alpha_slow: 0.00
-    recovery_alpha_fast: 0.00
+    recovery_alpha_slow: 0.0
+    recovery_alpha_fast: 0.0
     update_min_a: 0.2
     update_min_d: 0.25
